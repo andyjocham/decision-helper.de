@@ -685,6 +685,7 @@ main section {
     width: 100%;
     gap: 6px;
     justify-content: flex-end;
+    margin-bottom: 10px;
   }
 
   .nav a {
