@@ -683,8 +683,10 @@ main section {
 
   .nav {
     width: 100%;
+    flex-direction: column;
     gap: 6px;
     justify-content: flex-end;
+    align-items: flex-end;
     margin-bottom: 10px;
   }
 
