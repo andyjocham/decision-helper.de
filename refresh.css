@@ -70,9 +70,29 @@
   box-shadow: 0 18px 36px rgba(76, 79, 105, 0.16);
 }
 
+.screen-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  align-items: start;
+  justify-items: center;
+}
+
+.screen-pair img {
+  width: 100%;
+  max-width: 256px;
+  margin: 0 auto;
+  border-radius: 26px;
+  box-shadow: 0 18px 36px rgba(76, 79, 105, 0.16);
+}
+
 @media (max-width: 960px) {
   .shot-stage {
     min-height: 380px;
+  }
+
+  .screen-pair {
+    grid-template-columns: 1fr;
   }
 }
 
