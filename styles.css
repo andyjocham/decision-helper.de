@@ -234,6 +234,68 @@ p {
   gap: 12px;
 }
 
+.app-store-band {
+  padding: 22px 0 0;
+}
+
+.app-store-repeat {
+  padding: 6px 0 34px;
+}
+
+.app-store-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(245, 247, 255, 0.82));
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.app-store-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.app-store-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 22px;
+  box-shadow: 0 16px 34px rgba(76, 79, 105, 0.18);
+  flex: 0 0 auto;
+}
+
+.app-store-copy p,
+.qr-card span {
+  margin: 0;
+}
+
+.qr-card {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  padding: 16px;
+  min-width: 154px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(124, 127, 147, 0.14);
+}
+
+.qr-card img {
+  width: 122px;
+  height: 122px;
+  border-radius: 16px;
+}
+
+.qr-card.small img {
+  width: 104px;
+  height: 104px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -639,6 +701,14 @@ main section {
 }
 
 @media (max-width: 960px) {
+  .app-store-card {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-card {
+    justify-self: start;
+  }
+
   .hero-grid,
   .split,
   .legal-layout,
@@ -675,6 +745,20 @@ main section {
   .section-head {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .app-store-head {
+    align-items: flex-start;
+  }
+
+  .app-store-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+  }
+
+  .qr-card {
+    min-width: 0;
   }
 
   .hero {
