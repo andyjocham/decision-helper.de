@@ -752,13 +752,26 @@ main section {
   }
 
   .app-store-icon {
-    width: 58px;
-    height: 58px;
-    border-radius: 18px;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
   }
 
   .qr-card {
     min-width: 0;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .qr-card img {
+    width: 88px;
+    height: 88px;
+    border-radius: 12px;
+  }
+
+  .qr-card.small img {
+    width: 72px;
+    height: 72px;
   }
 
   .hero {
